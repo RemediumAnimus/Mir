@@ -1,0 +1,757 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> </title>
+	
+	<!-- Reset styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css" >
+
+    <!-- Template styles -->
+    <link rel="stylesheet" href="js/vendor/ionrangeslider/ion.rangeSlider.css" >
+    <link rel="stylesheet" href="js/vendor/ionrangeslider/ion.rangeSlider.skinHTML5.css" >
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+    <link rel="stylesheet" href="template-styles.css" >
+    
+    <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
+    
+    <!-- Scripts -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/vendor/fastclick.js"></script>
+	<script src="js/vendor/ionrangeslider/ion.rangeSlider.min.js"></script>
+	<script src="js/vendor/chart/jqBarGraph.1.1.js"></script>
+	<script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+	<script src="js/vendor/rotate/rotate.js"></script>
+	<script src="js/scripts.js"></script>
+	
+</head>
+<div id="min-indicator"></div>
+<div id="medium-indicator"></div>
+<body>
+
+	<div class="page">
+		
+		<div class="n-header">
+			<div class="n-header__user">
+				<div class="n-header__user__pic">
+					<img src="img/tmp/user.png" alt="" />
+				</div>
+				<div class="n-header__user__name">
+					Ларина 
+					Татьяна
+				</div>
+			</div>												
+			<div class="n-header__butter">
+				<div class="line"></div>				
+			</div>
+			<div class="n-header__search">
+				<a href="#"></a>
+			</div>
+			<div class="n-header__bucket">
+				<a href="#"></a>
+			</div>
+			<div class="n-header__count">
+				<div class="n-header__count__first">
+					800
+				</div>
+				<div class="n-header__count__second">
+					1200
+				</div>
+			</div>
+			<div class="n-header__menu">
+				<ul>
+					<li><a href="#">Первый пункт</a></li>
+					<li><a href="#">Второй пункт</a></li>
+					<li><a href="#">Третий пункт</a></li>
+					<li><a href="#">Четвертый пункт</a></li>
+					<li><a href="#">Пятый пункт</a></li>
+					<li><a href="#">Шестой пункт</a></li>
+					<li><a href="#">Седьмой пункт</a></li>
+				</ul>		
+			</div>
+		</div>
+		<!-- /.n-header -->
+		
+		<div class="n-main">
+			<div class="n-main__salary">
+				
+				<div class="n-main__salary__top">
+					<div class="n-main__bk__bucket n-main__bk__bucket--mod">
+						<img src="img/it1.png" alt="" />					
+					</div>
+				</div>				
+		
+				<div class="n-container n-container--mod">
+					<div class="n-main__bucket__top">
+						<div class="n-main__bucket__all">
+							Моя зарплата:
+						</div>
+						
+						<div class="n-main__bucket__summ">
+						<span>Я в рейтинге</span>
+						</div>
+					</div>
+					<div class="n-main__salary__header">
+						<div class="n-main__salary__header__l">
+							<div class="n-main__salary__header__l__container active">
+								<a href="#"></a>
+								<span>За месяц</span>
+							</div>
+						</div>
+						<div class="n-main__salary__header__r">
+							<a href="#"></a>
+							<span>Сегодня</span>
+						</div>
+					</div>
+					<div class="n-main__salary__summ">
+						<div class="n-main__salary__summ__ok">
+							<span>Твоя мог бы получить</span>
+							<b>32, 516 р.</b>
+						</div>
+						<div class="n-main__salary__summ__done">
+							<span><img src="img/ok2.png" alt="" /></span>
+							<b>32, 516 р.</b>
+						</div>
+					</div>
+					<div class="n-main__graph__center">
+						<div class="n-main__graph__container">
+							<div class="n-main__graph">
+								
+							</div>
+							<div class="n-main__graph__line1"></div>
+							<div class="n-main__graph__line2">
+								<div class="n-main__graph__line2__text">Показатели</div>
+							</div>
+						</div>
+					</div>
+					<div class="n-main__salary__labels">
+						<div class="n-main__salary__labels__item">
+							<div class="n-main__salary__labels__item__square"></div>
+							<div class="n-main__salary__labels__item__text"><span>Сумма продаж сопутствующих товаров</span></div>
+						</div>
+						<div class="n-main__salary__labels__item">
+							<div class="n-main__salary__labels__item__square n-main__salary__labels__item__square--red"></div>
+							<div class="n-main__salary__labels__item__text"><span>Сумма продаж доп.гарантий</span></div>
+						</div>
+						<div class="n-main__salary__labels__item">
+							<div class="n-main__salary__labels__item__square n-main__salary__labels__item__square--pink"></div>
+							<div class="n-main__salary__labels__item__text"><span>Сумма продаж пакетовпрограмм</span></div>
+						</div>
+						<div class="n-main__salary__labels__item">
+							<div class="n-main__salary__labels__item__square n-main__salary__labels__item__square--blue"></div>
+							<div class="n-main__salary__labels__item__text"><span>Сумма продаж РГС</span></div>
+						</div>
+					</div>
+					<!-- /.n-main__salary__lables -->
+					<div class="n-main__salary__table">
+						
+						<div class="n-main__salary__table__row n-main__salary__table__row--mod n-main__salary__table__row--head noborder">
+							<div class="n-main__salary__table__cell noborder">Кто?</div>
+							<div class="n-main__salary__table__cell noborder">Сумма продаж</div>
+							<div class="n-main__salary__table__cell noborder">Базовая премия</div>
+							<div class="n-main__salary__table__cell noborder">Итоговая премия</div>
+						</div>
+						<!-- /.n-main__salary__table__row -->
+						<div class="n-main__salary__table__row">
+							<div class="n-main__salary__table__cell">Зимин </br> Михаил Н.</div>
+							<div class="n-main__salary__table__cell bold">320 179,00</div>
+							<div class="n-main__salary__table__cell bold">6 955,53</div>
+							<div class="n-main__salary__table__cell bold">32 700,00</div>
+						</div>
+						<div class="n-main__salary__table__row n-main__salary__table__row--mod2">
+							<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--blue noborder">
+								<div class="n-main__salary__table__cell__l">
+									<span>Сумма продаж сопутствующих товаров</span>
+									<b>26 573,55</b>
+								</div>
+								<div class="n-main__salary__table__cell__r">
+									<span>Доля</span>
+									<b>13,18</b>
+								</div>
+							</div>
+							<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--red">
+								<div class="n-main__salary__table__cell__l">
+									<span>Сумма продаж доп.гарантий</span>
+									<b>26 573,55</b>
+								</div>
+								<div class="n-main__salary__table__cell__r">
+									<span>Доля</span>
+									<b>13,18</b>
+								</div>
+							</div>
+							</div>
+							<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--pink">
+								<div class="n-main__salary__table__cell__l">
+									<span>Сумма продаж пакетов программ</span>
+									<b>0</b>
+								</div>
+								<div class="n-main__salary__table__cell__r">
+									<span>Доля</span>
+									<b>1,00</b>
+								</div>
+							</div>
+							</div>
+							<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--green">
+								<div class="n-main__salary__table__cell__l">
+									<span>Сумма продаж РГС</span>
+									<b>0</b>
+								</div>
+								<div class="n-main__salary__table__cell__r">
+									<span>Доля</span>
+									<b>0</b>
+								</div>
+							</div>
+							</div>
+						</div>
+						<!-- /.n-main__salary__table__row -->
+						
+					</div>
+					<!-- /.n-main__salary__table -->
+					
+					<div class="n-main__bucket__top">
+						<div class="n-main__bucket__all">
+							Рейтинг:
+							<span>Моя позиция №2</span>
+						</div>
+						
+						<div class="n-main__bucket__summ n-main__bucket__summ--mod">
+						<span>Где я?</span>
+						</div>
+					</div>
+					<div class="n-main__salary__header">
+						<div class="n-main__salary__header__l">
+							<div class="n-main__salary__header__l__container active">
+								<a href="#"></a>
+								<span>За месяц</span>
+							</div>
+						</div>
+						<div class="n-main__salary__header__r">
+							<a href="#"></a>
+							<span>Сегодня</span>
+						</div>
+					</div>
+					<div class="n-main__salary__slider">
+						<div class="n-main__salary__slider__container swiper-wrapper">
+							<div class="n-main__salary__slider__item n-main__salary__slider__item--n1 swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№1
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Клименко
+									</div>
+									<div class="n-main__salary__slider__io">
+										Антон Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>18 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item n-main__salary__slider__item--n2 swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№2
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Клименко
+									</div>
+									<div class="n-main__salary__slider__io">
+										Антон Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>18 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item n-main__salary__slider__item--n3 swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№3
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Клименко
+									</div>
+									<div class="n-main__salary__slider__io">
+										Антон Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>18 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№4
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Клименко
+									</div>
+									<div class="n-main__salary__slider__io">
+										Антон Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>18 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№5
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Кургаев
+									</div>
+									<div class="n-main__salary__slider__io">
+										Антон Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>18 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№6
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Смирнов
+									</div>
+									<div class="n-main__salary__slider__io">
+										Андрей Н.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>17 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№8
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Соколов
+									</div>
+									<div class="n-main__salary__slider__io">
+										Никита Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>15 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№9
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Соколов
+									</div>
+									<div class="n-main__salary__slider__io">
+										Никита Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>15 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№10
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Соколов
+									</div>
+									<div class="n-main__salary__slider__io">
+										Никита Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>15 300</span>
+								</div>
+							</div>
+							<div class="n-main__salary__slider__item swiper-slide">
+								<a href="#"></a>																					
+								<div class="n-main__salary__slider__pic">
+									<img src="img/pic4.png" alt="" />
+								</div>
+								<div class="n-main__salary__slider__number">
+									№11
+								</div>
+								<div class="n-main__salary__slider__name">
+									<div class="n-main__salary__slider__fam">
+										Соколов
+									</div>
+									<div class="n-main__salary__slider__io">
+										Никита Д.
+									</div>
+								</div>
+								<div class="n-main__salary__slider__cost">
+									<span>15 300</span>
+								</div>
+							</div>
+						</div>
+						<div class="n-main__salary__slider__scrollbar swiper-scrollbar"></div>
+					</div>
+					<!-- /.n-main__salary__slider -->
+					<div class="n-main__salary__eye">
+						<span>Показать деализацию рейтинга</span>
+					</div>
+					
+					<div class="n-main__salary__detail">
+						
+						<div class="n-main__salary__header">
+							<div class="n-main__salary__header__l">
+								<div class="n-main__salary__header__l__container active">
+									<a href="#"></a>
+									<span>За месяц</span>
+								</div>
+							</div>
+							<div class="n-main__salary__header__r">
+								<a href="#"></a>
+								<span>Сегодня</span>
+							</div>
+						</div>
+						
+						<div class="n-main__salary__table n-main__salary__table--mod todo3">
+							
+							<div class="n-main__salary__table__show">
+								<span>Показать детализацию</span>
+							</div>
+						
+							<div class="n-main__salary__table__row n-main__salary__table__row--mod n-main__salary__table__row--head noborder">
+								<div class="ops">#</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod4 noborder">Кто?</div>
+								<div class="n-main__salary__table__cell noborder">Сумма продаж</div>
+								<div class="n-main__salary__table__cell noborder">Базовая премия</div>
+								<div class="n-main__salary__table__cell noborder">Итоговая премия</div>
+							</div>
+							<!-- /.n-main__salary__table__row -->
+							<div class="n-main__salary__table__row noborder2 todo1">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod3 noborder todo2 n-main__salary__table__cell">2</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod2">Зимин </br> Михаил Н.</div>
+								<div class="n-main__salary__table__cell bold">320 179,00</div>
+								<div class="n-main__salary__table__cell bold">6 955,53</div>
+								<div class="n-main__salary__table__cell bold">32 700,00</div>
+							</div>
+							<div class="n-main__salary__table__row n-main__salary__table__row--mod2 tohide">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--blue noborder dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж сопутствующих товаров</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--red dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж доп.гарантий</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--pink dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж пакетов программ</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>1,00</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--green dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж РГС</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>0</b>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.n-main__salary__table__row -->
+							
+						</div>
+						<!-- /.n-main__salary__table -->
+						
+						<div class="n-main__salary__table n-main__salary__table--mod todo3 margin">
+							
+							<div class="n-main__salary__table__show">
+								<span>Показать детализацию</span>
+							</div>
+													
+							<div class="n-main__salary__table__row noborder2 todo1">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod3 noborder todo2 n-main__salary__table__cell">2</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod2">Зимин </br> Михаил Н.</div>
+								<div class="n-main__salary__table__cell bold">320 179,00</div>
+								<div class="n-main__salary__table__cell bold">6 955,53</div>
+								<div class="n-main__salary__table__cell bold">32 700,00</div>
+							</div>
+							<div class="n-main__salary__table__row n-main__salary__table__row--mod2 tohide">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--blue noborder dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж сопутствующих товаров</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--red dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж доп.гарантий</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--pink dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж пакетов программ</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>1,00</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--green dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж РГС</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>0</b>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.n-main__salary__table__row -->
+							
+						</div>
+						<!-- /.n-main__salary__table -->
+						
+						<div class="n-main__salary__table n-main__salary__table--mod todo3 margin">
+							
+							<div class="n-main__salary__table__show">
+								<span>Показать детализацию</span>
+							</div>
+													
+							<div class="n-main__salary__table__row noborder2 todo1">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod3 noborder todo2 n-main__salary__table__cell">2</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod2">Зимин </br> Михаил Н.</div>
+								<div class="n-main__salary__table__cell bold">320 179,00</div>
+								<div class="n-main__salary__table__cell bold">6 955,53</div>
+								<div class="n-main__salary__table__cell bold">32 700,00</div>
+							</div>
+							<div class="n-main__salary__table__row n-main__salary__table__row--mod2 tohide">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--blue noborder dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж сопутствующих товаров</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--red dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж доп.гарантий</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--pink dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж пакетов программ</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>1,00</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--green dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж РГС</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>0</b>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.n-main__salary__table__row -->
+							
+						</div>
+						<!-- /.n-main__salary__table -->
+						
+						<div class="n-main__salary__table n-main__salary__table--mod todo3 margin">
+							
+							<div class="n-main__salary__table__show">
+								<span>Показать детализацию</span>
+							</div>
+													
+							<div class="n-main__salary__table__row noborder2 todo1">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod3 noborder todo2 n-main__salary__table__cell">2</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod2">Зимин </br> Михаил Н.</div>
+								<div class="n-main__salary__table__cell bold">320 179,00</div>
+								<div class="n-main__salary__table__cell bold">6 955,53</div>
+								<div class="n-main__salary__table__cell bold">32 700,00</div>
+							</div>
+							<div class="n-main__salary__table__row n-main__salary__table__row--mod2 tohide">
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--blue noborder dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж сопутствующих товаров</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--red dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж доп.гарантий</span>
+											<b>26 573,55</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>13,18</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--pink dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж пакетов программ</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>1,00</b>
+										</div>
+									</div>
+								</div>
+								<div class="n-main__salary__table__cell n-main__salary__table__cell--mod noborder">
+									<div class="n-main__salary__table__cell n-main__salary__table__cell--mod n-main__salary__table__cell--green dblock">
+										<div class="n-main__salary__table__cell__l">
+											<span>Сумма продаж РГС</span>
+											<b>0</b>
+										</div>
+										<div class="n-main__salary__table__cell__r">
+											<span>Доля</span>
+											<b>0</b>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.n-main__salary__table__row -->
+							
+						</div>
+						<!-- /.n-main__salary__table -->
+						
+					</div>
+					<!-- /.n-main__salary__detail -->
+				</div>								
+			
+			</div>
+			<!-- /.n-main__salary -->
+			
+		</div>
+		
+	</div>
+
+</body>
+
+</html>

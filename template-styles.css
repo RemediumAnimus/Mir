@@ -839,6 +839,7 @@ body {
   border: none;
   color: #323232;
   font-weight: normal;
+  margin: 0;
 }
 .n-main__sort__values .ui-widget {
   font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
@@ -859,6 +860,7 @@ body {
 .n-main__sort__values .ui-state-focus {
   background: #e9e9e9;
   font-weight: normal;
+  margin: 0;
 }
 .n-main__info {
   border: 1px solid #c8c8c8;
@@ -2694,6 +2696,7 @@ body {
 .n-main__subblock .ui-state-focus {
   background: #414141;
   border: 0;
+  margin: 0;
 }
 .n-main__knowledge__item {
   min-height: 80px;

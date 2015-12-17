@@ -3424,6 +3424,7 @@ html, body {
     font-size: 24px;
     padding-bottom: 32px;
     outline: 0;
+    width: 100%;
     
     p {
       pointer-events: none;
@@ -3441,5 +3442,28 @@ html, body {
   #selectVariant {
     width: 100%;
     height: 100%;      
+  }
+  
+  .fieldT {
+    margin-top: 50px;
+    position: relative;
+    border-bottom: 1px solid #cbcbcb;
+    
+    &:before {
+      .blocky;
+      width: 34px;
+      height: 34px;
+      background: url("@{img-path}/lett.png");
+      position: absolute;
+      left: 10px;
+      top: 20px;
+    }
+    textarea {
+      position: static;
+      width: 100%;
+      height: auto;
+      line-height: 72px;
+      text-decoration: underline;
+    }
   }
 }//n-main

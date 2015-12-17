@@ -43,7 +43,9 @@ $(document).ready(function() {
 
     });
     
-   (function(){
+    $('.fieldT').find('textarea').elastic();
+    
+   /*(function(){
    	
 	   var timer;
 	   $('.textfield').each(function(){
@@ -92,7 +94,13 @@ $(document).ready(function() {
 	   		});
 	   });
    
-   })();
+   })();*/
+   
+   /*function controlselectHandler(evt) {
+	    evt.preventDefault();
+	}	
+	document.body.addEventListener('mscontrolselect', controlselectHandler);*/
+	//document.execCommand("enableObjectResizing", false, false);
     
    $('.ionslider').ionRangeSlider({
    	min: 0,

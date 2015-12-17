@@ -3120,6 +3120,7 @@ body {
   font-size: 24px;
   padding-bottom: 32px;
   outline: 0;
+  width: 100%;
 }
 .n-main .textfield p {
   pointer-events: none;
@@ -3134,4 +3135,26 @@ body {
 .n-main #selectVariant {
   width: 100%;
   height: 100%;
+}
+.n-main .fieldT {
+  margin-top: 50px;
+  position: relative;
+  border-bottom: 1px solid #cbcbcb;
+}
+.n-main .fieldT:before {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("img/lett.png");
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.n-main .fieldT textarea {
+  position: static;
+  width: 100%;
+  height: auto;
+  line-height: 72px;
+  text-decoration: underline;
 }

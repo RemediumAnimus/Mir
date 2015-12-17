@@ -37,7 +37,9 @@ body {
 .page {
   width: 100%;
   min-width: 800px;
-  height: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .n-main {
   padding-bottom: 100px;
@@ -277,27 +279,35 @@ body {
 }
 .n-header__menu {
   position: absolute;
-  width: 231px;
+  width: 100%;
+  height: 100%;
   right: 0px;
   top: 70px;
   overflow: hidden;
   z-index: 10;
   visibility: hidden;
 }
-.n-header__menu ul {
+.n-header__menu__container {
+  background: #2d2d2d;
+  right: -100%;
+  height: 100%;
   position: relative;
-  right: -231px;
   -webkit-transition: all 0.32s ease-in-out;
   -moz-transition: all 0.32s ease-in-out;
   -ms-transition: all 0.32s ease-in-out;
   -o-transition: all 0.32s ease-in-out;
   transition: all 0.32s ease-in-out;
 }
+.n-header__menu ul {
+  position: relative;
+  padding-top: 70px;
+}
 .n-header__menu ul li {
-  font-size: 24px;
+  font-size: 30px;
+  padding: 22px 0px 22px 50px;
   color: #fff;
   background: #2d2d2d;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #4f4f4f;
   border-left: 1px solid #000;
   position: relative;
   right: 0px;
@@ -306,14 +316,30 @@ body {
   -ms-transition: all 0.32s ease-in-out;
   -o-transition: all 0.32s ease-in-out;
   transition: all 0.32s ease-in-out;
-}
-.n-header__menu ul li:first-child {
-  border-top: 1px solid #000;
+  display: table;
+  width: 100%;
 }
 .n-header__menu ul li a {
   display: block;
-  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.n-header__menu ul li:first-child {
+  border-top: 1px solid #4f4f4f;
+}
+.n-header__menu ul li span {
+  display: table-cell;
   padding-right: 5px;
+  vertical-align: middle;
+  width: 86%;
+}
+.n-header__menu ul li img {
+  display: table-cell;
+  vertical-align: middle;
 }
 .n-header__menu ul li:hover {
   background: #474747;
@@ -344,6 +370,7 @@ body {
   color: #fff;
   text-align: center;
   margin-top: 90px;
+  cursor: pointer;
 }
 .n-main__b-btn:hover {
   background: #00a465;
@@ -777,6 +804,9 @@ body {
 .n-main__sort__values select {
   width: 100%;
 }
+.n-main__sort__values .ui-selectmenu-menu {
+  width: 450px;
+}
 .n-main__sort__values .ui-state-default {
   border: none;
   outline: none;
@@ -785,6 +815,7 @@ body {
 }
 .n-main__sort__values .ui-selectmenu-button {
   overflow: visible;
+  background: #fff !important;
 }
 .n-main__sort__values span.ui-selectmenu-text {
   padding: 0;
@@ -808,7 +839,6 @@ body {
   border: none;
   color: #323232;
   font-weight: normal;
-  font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
 }
 .n-main__sort__values .ui-widget {
   font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
@@ -816,6 +846,19 @@ body {
 .n-main__sort__values .ui-icon {
   background: url("img/arr-s.png") no-repeat;
   background-position: center;
+}
+.n-main__sort__values .ui-widget-content {
+  background: #fff;
+  padding: 10px 0px;
+}
+.n-main__sort__values .ui-menu-item {
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 36px;
+}
+.n-main__sort__values .ui-state-focus {
+  background: #e9e9e9;
+  font-weight: normal;
 }
 .n-main__info {
   border: 1px solid #c8c8c8;
@@ -2439,6 +2482,11 @@ body {
 .n-main__actions__item__container {
   padding: 15px 20px;
 }
+.n-main__actions__item__container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .n-main__actions__item__header span {
   display: block;
   font-size: 16px;
@@ -2452,7 +2500,7 @@ body {
   width: 280px;
   color: #323232;
   float: left;
-  line-height: 14px;
+  line-height: 18px;
 }
 .n-main__actions__item__text {
   font-size: 18px;
@@ -2587,37 +2635,80 @@ body {
   height: 104px;
   background: #2d2d2d;
   overflow: hidden;
+  /*span {
+      font-size: 24px;
+      line-height: 104px;
+      color: #fff;
+      display: block;
+      position: relative;
+      
+      &:after {
+        .blocky;
+        width: 15px;
+        height: 16px;
+        background: url("@{img-path}/arr2.png") no-repeat;
+        .transform(rotate(-90deg));
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+      }
+    }*/
 }
-.n-main__subblock span {
-  font-size: 24px;
-  line-height: 104px;
-  color: #fff;
-  display: block;
-  position: relative;
+.n-main__subblock .n-container {
+  height: 100%;
 }
-.n-main__subblock span:after {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 16px;
-  background: url("img/arr2.png") no-repeat;
-  transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+.n-main__subblock .ui-widget {
+  left: 0;
   right: 0;
+  margin: auto;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  background: none !important;
+}
+.n-main__subblock span.ui-selectmenu-text {
+  color: #fff;
+  font-size: 24px;
+  padding: 0;
+  padding-top: 34px;
+  font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+  font-weight: normal;
+}
+.n-main__subblock .ui-icon {
+  background: url("img/arr-m.png") center no-repeat;
+}
+.n-main__subblock .ui-menu {
+  background: #2d2d2d;
+}
+.n-main__subblock .ui-menu-item {
+  padding: 25px 0px;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+  font-weight: normal;
+  background: #2d2d2d;
+}
+.n-main__subblock .ui-state-focus {
+  background: #414141;
+  border: 0;
 }
 .n-main__knowledge__item {
-  height: 80px;
+  min-height: 80px;
   border: 1px solid #eaeaea;
   position: relative;
   margin-top: 8px;
+}
+.n-main__knowledge__item--active:before {
+  background: #484848 !important;
+}
+.n-main__knowledge__item--active .circle {
+  border: 1px solid #a4a4a4 !important;
+}
+.n-main__knowledge__item--active .circle:after {
+  background: url("img/arr2-r.png") 0px -15px !important;
 }
 .n-main__knowledge__item:hover:before {
   background: #484848;
@@ -2686,6 +2777,15 @@ body {
 }
 .n-main__knowledge__item--instructions .circle:after {
   background: url("img/arr3-r.png");
+}
+.n-main__knowledge__item--instructions--active:before {
+  background: #484848 !important;
+}
+.n-main__knowledge__item--instructions--active .circle {
+  border: 1px solid #a4a4a4 !important;
+}
+.n-main__knowledge__item--instructions--active .circle:after {
+  background: url("img/arr2-r.png") 0px -15px !important;
 }
 .n-main__knowledge .n-main__pag {
   margin-top: 20px;
@@ -2912,7 +3012,7 @@ body {
 .n-main__complaint .n-main__b-btn {
   width: 576px;
   margin: 0px auto;
-  margin-top: 470px;
+  margin-top: 55px;
   margin-bottom: 50px;
 }
 .n-main__question .n-main__auth__field {
@@ -2989,4 +3089,49 @@ body {
   right: 0;
   margin: auto;
   top: -50px;
+}
+.n-main .textfield__container {
+  position: relative;
+}
+.n-main .textfield__container input {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
+.n-main .textfield__container:before {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("img/lett.png");
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.n-main .textfield__container .line {
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #cbcbcb;
+}
+.n-main .textfield {
+  margin-top: 20px;
+  font-size: 24px;
+  padding-bottom: 32px;
+  outline: 0;
+}
+.n-main .textfield p {
+  pointer-events: none;
+}
+.n-main .textfield span {
+  display: block;
+  min-height: 74px;
+  line-height: 72px;
+  border-bottom: 1px solid #cbcbcb;
+  padding-left: 80px;
+}
+.n-main #selectVariant {
+  width: 100%;
+  height: 100%;
 }

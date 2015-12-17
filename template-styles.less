@@ -56,7 +56,9 @@ html, body {
 .page {
   width: 100%;
   min-width: 800px; 
-  height: 100%;  
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;  
 }
 
 .n-main {
@@ -278,36 +280,66 @@ html, body {
   
   &__menu {
     position: absolute;
-    width: 231px;   
+    width: 100%; 
+    height: 100%;  
     right: 0px;
     top: 70px;  
     overflow: hidden; 
     z-index: 10;  
-    visibility: hidden; 
+    visibility: hidden;        
+    
+    &__container {
+      background: #2d2d2d;
+      right: -100%;
+      height: 100%;
+      position: relative; 
+      .transition(@attr:all, @time: 0.32s, @type: ease-in-out);
+    } 
     
     ul {
-      position: relative;
-      right: -231px;     
-      .transition(@attr:all, @time: 0.32s, @type: ease-in-out); 
+      position: relative;                    
+      //height: 100%;
+      padding-top: 70px;
       
       li {
-        font-size: 24px;
+        font-size: 30px;
+        padding: 22px 0px 22px 50px;
         color: #fff;    
         background: #2d2d2d;    
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #4f4f4f;
         border-left: 1px solid #000;        
         position: relative;
         right: 0px;
         .transition(@attr:all, @time: 0.32s, @type: ease-in-out);
-        
-        &:first-child {
-          border-top: 1px solid #000;
-        }
+        display: table;
+        width: 100%;
         
         a {
           display: block;
-          padding: 10px 15px;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          z-index: 1;
+        }
+        
+        
+        &:first-child {
+          border-top: 1px solid #4f4f4f;
+        }
+        
+        span {
+          display: table-cell;
+          //padding: 10px 15px;
           padding-right: 5px;
+          vertical-align: middle;
+          width: 86%;
+        }
+        
+        img {
+          display: table-cell;
+          vertical-align: middle;         
         }
         
         &:hover {
@@ -340,6 +372,7 @@ html, body {
     color: #fff;
     text-align: center;
     margin-top: 90px;
+    cursor: pointer;
     
     &:hover {
       background: darken(#00bd75,5%);
@@ -753,10 +786,14 @@ html, body {
     &__values {
       width: 254px;
       display: inline-block;
-      vertical-align: top;
+      vertical-align: top;     
       
       select {
         width: 100%;
+      }
+      
+      .ui-selectmenu-menu {
+        width: 450px;
       }
       
       .ui-state-default {
@@ -768,6 +805,7 @@ html, body {
       
       .ui-selectmenu-button {
         overflow: visible;
+        background: #fff !important;
       } 
       
       span.ui-selectmenu-text {
@@ -793,7 +831,6 @@ html, body {
         border: none;
         color: @grey;
         font-weight: normal;
-        font-family: @font-futura-bold;
       }
       
       .ui-widget {
@@ -803,6 +840,22 @@ html, body {
       .ui-icon {
         background: url("@{img-path}/arr-s.png") no-repeat;
         background-position: center;
+      }
+      
+      .ui-widget-content {
+        background: #fff;
+        padding: 10px 0px;
+      }
+      
+      .ui-menu-item {
+        padding: 15px 0px;
+        text-align: center;
+        font-size: 36px;
+      }
+      
+      .ui-state-focus {
+        background: #e9e9e9;
+        font-weight: normal;
       }
     }
   }
@@ -2604,6 +2657,11 @@ html, body {
       
       &__container {
         padding: 15px 20px;
+        
+        &:after {
+          .blocky;
+          .clear;
+        }
       }
       
       &__header {
@@ -2621,7 +2679,7 @@ html, body {
           width: 280px;
           color: @grey;
           float: left;
-          line-height: 14px;
+          line-height: 18px;
         }
       }
       
@@ -2803,7 +2861,11 @@ html, body {
     background: #2d2d2d;
     overflow: hidden;
     
-    span {
+    .n-container {
+      height: 100%;
+    }
+    
+    /*span {
       font-size: 24px;
       line-height: 104px;
       color: #fff;
@@ -2823,15 +2885,70 @@ html, body {
         margin: auto;
         right: 0;
       }
+    }*/
+   
+   .ui-widget {
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 0;
+      outline: 0;
+      text-align: center;
+      background: none !important;
+    }
+    
+    span.ui-selectmenu-text {
+      color: #fff;
+      font-size: 24px;
+      padding: 0;
+      padding-top: 34px;
+      font-family: @font-futura;
+      font-weight: normal;     
+    }
+    
+    .ui-icon {
+      background: url("@{img-path}/arr-m.png") center no-repeat;      
+    }
+    
+    .ui-menu {
+      background: #2d2d2d;
+    }
+    
+    .ui-menu-item {
+      padding: 25px 0px;
+      color: #fff;
+      font-size: 30px;
+      font-family: @font-futura;
+      font-weight: normal;
+      background: #2d2d2d;
+    }
+    
+    .ui-state-focus {
+      background: #414141;
+      border: 0;
     }
   }//subblock
   
   &__knowledge {
     &__item {
-      height: 80px;
+      min-height: 80px;
       border: 1px solid #eaeaea;
       position: relative;
       margin-top: 8px;
+      
+      &--active {
+        &:before {
+          background: #484848 !important;
+        }
+        
+        .circle {
+         border: 1px solid #a4a4a4 !important; 
+         
+         &:after {
+           background: url("@{img-path}/arr2-r.png") 0px -15px !important; 
+         }
+        }
+      }
       
       &:hover {
         &:before {
@@ -2918,6 +3035,19 @@ html, body {
           
           &:after {
             background: url("@{img-path}/arr3-r.png");
+          }
+        }
+         &--active {
+          &:before {
+            background: #484848 !important;
+          }
+          
+          .circle {
+           border: 1px solid #a4a4a4 !important; 
+           
+           &:after {
+             background: url("@{img-path}/arr2-r.png") 0px -15px !important; 
+           }
           }
         }        
       }//instructions
@@ -3168,7 +3298,8 @@ html, body {
     .n-main__b-btn {
       width: 576px;
       margin: 0px auto;
-      margin-top: 470px;
+      //margin-top: 470px;
+      margin-top: 55px;
       margin-bottom: 50px;
     }
   }
@@ -3261,5 +3392,54 @@ html, body {
         }
       }
     }
+  }
+  .textfield__container {
+    position: relative;
+    
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: 0;
+    }
+    
+    &:before {
+      .blocky;
+      width: 34px;
+      height: 34px;
+      background: url("@{img-path}/lett.png");
+      position: absolute;
+      left: 10px;
+      top: 20px;
+    }
+    .line {
+      position: absolute;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #cbcbcb;
+    }
+  }
+  .textfield {
+    margin-top: 20px;
+    font-size: 24px;
+    padding-bottom: 32px;
+    outline: 0;
+    
+    p {
+      pointer-events: none;
+    }
+    
+    span {
+      display: block;
+      min-height: 74px;
+      line-height: 72px;
+      border-bottom: 1px solid #cbcbcb;
+      padding-left: 80px;
+    }
+  }
+  
+  #selectVariant {
+    width: 100%;
+    height: 100%;      
   }
 }//n-main

@@ -41,6 +41,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.page--mod {
+  height: 100%;
+}
 .n-main {
   padding-bottom: 100px;
   padding-top: 70px;
@@ -388,6 +391,9 @@ body {
 .n-main__auth--mod {
   background: url("img/bg2.png");
   background-size: cover;
+}
+.n-main__auth--mod2 {
+  height: 100%;
 }
 .n-main__auth__ok {
   width: 301px;

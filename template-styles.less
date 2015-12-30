@@ -899,9 +899,58 @@ html, body {
         margin-top: 50px;
       }
     }
-    &__item {
+    
+    &__item-cont {
       border: 1px solid #c8c8c8;
-      height: 68px;
+      
+      &:hover {
+        .n-main__catalog__item__close {
+          background: darken(@green,5%);
+        }
+      }
+      
+      &:after {
+        .clear;
+        .blocky;
+      }
+    }
+    
+    &__subitem {
+      margin-top: 40px;
+      margin-left: 50px;
+      border: 1px solid #c8c8c8;
+      position: relative;
+      
+      &:before {
+        .blocky;
+        width: 19px;
+        height: 69px;
+        background: url("@{img-path}/sub.png");
+        position: absolute;
+        left: -35px;
+        top: -27px;
+      }
+      
+      &:hover {
+        .n-main__catalog__item__close {
+          background: darken(@green,5%);
+        }
+      }
+      
+      .n-main__catalog__item {
+        margin-bottom: 0 !important;
+        border: 0;
+      }
+      
+      .n-main__catalog__item__close {
+        right: -60px;
+      }
+      
+      .n-main__catalog__item__summ {
+        margin-right: 32px;
+      }
+    }
+    &__item {      
       position: relative;
       margin-right: 30px;
       margin-bottom: 20px;
@@ -909,10 +958,7 @@ html, body {
       &:hover {
         .n-main__catalog__item__bucket {
           background: darken(@green,5%);
-        }
-        .n-main__catalog__item__close {
-          background: darken(@green,5%);
-        }
+        }        
       }
       
       a {
@@ -961,13 +1007,13 @@ html, body {
         font-size: 24px;
         font-family: @font-futura-bold;
         color: @grey;
-        margin-right: 90px;
+        margin-right: 63px;
         margin-top: 20px;
       }
       
       &__close {
-        width: 68px;
-        height: 68px;
+        width: 72px;
+        height: 72px;
         border-radius: 50%;
         background: #999999;
         position: absolute;
@@ -1053,8 +1099,8 @@ html, body {
       
       &__name {
         float: left;
-        margin-right: 50px;
-        padding-top: 7px;
+        margin-right: 10px;
+        padding-top: 7px;        
         
         &--mod {
           padding-top: 12px;
@@ -1063,6 +1109,10 @@ html, body {
       
       &__mark {
         font-size: 16px;
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;        
+        text-overflow: ellipsis;
       }
       
       &__type {

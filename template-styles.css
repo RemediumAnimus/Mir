@@ -891,17 +891,52 @@ body {
 .n-main__catalog .n-main__search .n-main__auth__field {
   margin-top: 50px;
 }
-.n-main__catalog__item {
+.n-main__catalog__item-cont {
   border: 1px solid #c8c8c8;
-  height: 68px;
+}
+.n-main__catalog__item-cont:hover .n-main__catalog__item__close {
+  background: #00a465;
+}
+.n-main__catalog__item-cont:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.n-main__catalog__subitem {
+  margin-top: 40px;
+  margin-left: 50px;
+  border: 1px solid #c8c8c8;
+  position: relative;
+}
+.n-main__catalog__subitem:before {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 69px;
+  background: url("img/sub.png");
+  position: absolute;
+  left: -35px;
+  top: -27px;
+}
+.n-main__catalog__subitem:hover .n-main__catalog__item__close {
+  background: #00a465;
+}
+.n-main__catalog__subitem .n-main__catalog__item {
+  margin-bottom: 0 !important;
+  border: 0;
+}
+.n-main__catalog__subitem .n-main__catalog__item__close {
+  right: -60px;
+}
+.n-main__catalog__subitem .n-main__catalog__item__summ {
+  margin-right: 32px;
+}
+.n-main__catalog__item {
   position: relative;
   margin-right: 30px;
   margin-bottom: 20px;
 }
 .n-main__catalog__item:hover .n-main__catalog__item__bucket {
-  background: #00a465;
-}
-.n-main__catalog__item:hover .n-main__catalog__item__close {
   background: #00a465;
 }
 .n-main__catalog__item a {
@@ -947,12 +982,12 @@ body {
   font-size: 24px;
   font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
   color: #323232;
-  margin-right: 90px;
+  margin-right: 63px;
   margin-top: 20px;
 }
 .n-main__catalog__item__close {
-  width: 68px;
-  height: 68px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: #999999;
   position: absolute;
@@ -1029,7 +1064,7 @@ body {
 }
 .n-main__catalog__item__name {
   float: left;
-  margin-right: 50px;
+  margin-right: 10px;
   padding-top: 7px;
 }
 .n-main__catalog__item__name--mod {
@@ -1037,6 +1072,10 @@ body {
 }
 .n-main__catalog__item__mark {
   font-size: 16px;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .n-main__catalog__item__type {
   font-size: 16px;
